@@ -1,0 +1,4 @@
+﻿  Projects_Game_Pacman.cpp
+C:\Projects_Game_Pacman\Projects_Game_Pacman.cpp(95,51): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Projects_Game_Pacman\Projects_Game_Pacman.cpp(95,36): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Projects_Game_Pacman.vcxproj -> C:\Projects_Game_Pacman\x64\Debug\Projects_Game_Pacman.exe

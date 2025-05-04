@@ -1,4 +1,4 @@
-#include <array>
+﻿#include <array>
 #include <chrono>
 #include <ctime>
 #include <SFML/Graphics.hpp>
@@ -14,12 +14,14 @@
 
 int main()
 {
+	
 	bool game_won = 0;
 
 	unsigned lag = 0;
 
 	unsigned char level = 0;
 
+	
 	std::chrono::time_point<std::chrono::steady_clock> previous_time;
 
 	std::array<std::string, MAP_HEIGHT> map_sketch = {
@@ -48,11 +50,13 @@ int main()
 
 	std::array<std::array<Cell, MAP_HEIGHT>, MAP_WIDTH> map{};
 
+
 	std::array<Position, 4> ghost_positions;
 
 	sf::Event event;
 
 	sf::RenderWindow window(sf::VideoMode(CELL_SIZE * MAP_WIDTH * SCREEN_RESIZE, (FONT_HEIGHT + CELL_SIZE * MAP_HEIGHT) * SCREEN_RESIZE), "Pac-Man", sf::Style::Close);
+
 	window.setView(sf::View(sf::FloatRect(0, 0, CELL_SIZE * MAP_WIDTH, FONT_HEIGHT + CELL_SIZE * MAP_HEIGHT)));
 
 	GhostManager ghost_manager;
@@ -83,10 +87,11 @@ int main()
 			{
 				switch (event.type)
 				{
-					case sf::Event::Closed:
-					{
-						window.close();
-					}
+				case sf::Event::Closed:
+				{
+					
+					window.close();
+				}
 				}
 			}
 
@@ -98,7 +103,6 @@ int main()
 
 				ghost_manager.update(level, map, pacman);
 
-				
 				for (const std::array<Cell, MAP_HEIGHT>& column : map)
 				{
 					for (const Cell& cell : column)
@@ -142,7 +146,6 @@ int main()
 				pacman.reset();
 			}
 
-			
 			if (FRAME_DURATION > lag)
 			{
 				window.clear();
@@ -166,7 +169,7 @@ int main()
 					}
 					else
 					{
-						draw_text(1, 0, 0, "Game over!", window);
+						draw_text(1, 0, 0, "Game over", window);
 					}
 				}
 

@@ -2,18 +2,18 @@
 
 class Pacman
 {
-	//This is used for the death animation.
+	
 	bool animation_over;
-	//Am I dead?
+
 	bool dead;
 
 	unsigned char direction;
 
-	//More timers!
+
 	unsigned short animation_timer;
 	unsigned short energizer_timer;
 
-	//Current location of this creature, commonly known as Pacman.
+	
 	Position position;
 public:
 	Pacman();

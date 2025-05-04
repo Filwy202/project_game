@@ -1,13 +1,7 @@
-﻿  DrawText.cpp
-  Ghost.cpp
-  GhostManager.cpp
-  Main.cpp
-E:\Project_Game_Pacman\Main.cpp(72,23): warning C4244: 'initializing': conversion from '_Rep' to 'unsigned int', possible loss of data
-E:\Project_Game_Pacman\Main.cpp(72,23): warning C4244:         with
-E:\Project_Game_Pacman\Main.cpp(72,23): warning C4244:         [
-E:\Project_Game_Pacman\Main.cpp(72,23): warning C4244:             _Rep=__int64
-E:\Project_Game_Pacman\Main.cpp(72,23): warning C4244:         ]
-  MapCollision.cpp
-  Pacman.cpp
-  Generating Code...
+﻿  Main.cpp
+E:\Project_Game_Pacman\Main.cpp(76,23): warning C4244: 'initializing': conversion from '_Rep' to 'unsigned int', possible loss of data
+E:\Project_Game_Pacman\Main.cpp(76,23): warning C4244:         with
+E:\Project_Game_Pacman\Main.cpp(76,23): warning C4244:         [
+E:\Project_Game_Pacman\Main.cpp(76,23): warning C4244:             _Rep=__int64
+E:\Project_Game_Pacman\Main.cpp(76,23): warning C4244:         ]
   Project_Game_Pacman.vcxproj -> E:\Project_Game_Pacman\x64\Debug\Project_Game_Pacman.exe
